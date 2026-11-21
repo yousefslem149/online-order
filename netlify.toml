@@ -1,0 +1,31 @@
+plugins = []
+headers = []
+redirects = []
+
+[database]
+
+  [database.migrations]
+  path = "/opt/build/repo/netlify/database/migrations"
+
+[build]
+publish = "/opt/build/repo/public"
+publishOrigin = "config"
+
+  [build.environment]
+  NODE_VERSION = "24"
+
+  [build.processing]
+
+    [build.processing.css]
+
+    [build.processing.html]
+
+    [build.processing.images]
+
+    [build.processing.js]
+
+  [build.services]
+
+[functions]
+
+  [functions."*"]
